@@ -1,0 +1,12 @@
+FifaSim/
+├── src/
+│   ├── Main.java
+│   ├── models/
+│   │   ├── Equipo.java
+│   │   ├── Jugador.java
+│   │   ├── Partido.java
+│   └── strategy/
+│       ├── EstrategiaJuego.java
+│       ├── AtaqueRapido.java
+│       └── DefensaFuerte.java
+├── Dockerfile
