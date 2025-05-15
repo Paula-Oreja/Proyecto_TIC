@@ -1,4 +1,3 @@
-package src;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -100,8 +99,8 @@ class Partido {
     }
 }
 
-// Clase principal
-public class FifaSimulator {
+// Clase principal con nombre "Fifa"
+public class Fifa {
     public static void main(String[] args) {
         Equipo barcelona = new Equipo("Barcelona", new AtaqueRapido());
         Equipo madrid = new Equipo("Real Madrid", new DefensaFuerte());
@@ -116,4 +115,5 @@ public class FifaSimulator {
         partido.jugar();
     }
 }
+
 
