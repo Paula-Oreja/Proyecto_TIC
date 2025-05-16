@@ -8,8 +8,8 @@ Este proyecto compara el rendimiento y uso de recursos de una aplicación Java e
 
 ## Estructura del Proyecto
 
-- `/docker` : Contiene el código fuente Java (`Fifa.java`) y el `Dockerfile` para construir la imagen.
-- `/docs` : Documentación adicional con resultados, análisis y guías de instalación.
+- `/docker` : Contiene el código fuente Java (`Fifa.java`) y el `Dockerfile` para construir la imagen.  
+- `/docs` : Documentación adicional con resultados, análisis y guías de instalación.  
 - `README.md` : Descripción general y guía de uso.
 
 ---
@@ -28,3 +28,4 @@ La aplicación Java se ejecuta dentro de un contenedor Docker basado en la image
 cd docker
 docker build -t fifa-java:1.0 .
 docker run --rm fifa-java:1.0
+
