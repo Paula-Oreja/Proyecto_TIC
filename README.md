@@ -1,26 +1,30 @@
-# PROYECTO_TIC
+# Proyecto TIC: Evaluación Comparativa de Rendimiento entre Máquina Virtual y Docker
 
-## Ingeniería Informática
+## Introducción
 
-### BIENVENIDO A MI REPOSITORIO
+Este proyecto compara el rendimiento y uso de recursos de una aplicación Java ejecutada en dos entornos distintos: una Máquina Virtual Ubuntu y un contenedor Docker. La aplicación es un juego de simulación de partido de fútbol desarrollado en Java.
 
+---
 
-Soy estudiante de Ingeniería Informática.
+## Estructura del Proyecto
 
-Este repositorio enseñará el proceso de mi proyecto, tantos errores como soluciones.
+- `/docker` : Contiene el código fuente Java (`Fifa.java`) y el `Dockerfile` para construir la imagen.
+- `/docs` : Documentación adicional con resultados, análisis y guías de instalación.
+- `README.md` : Descripción general y guía de uso.
 
-## Contacto
+---
 
-- Email: paula.oreja@alumnos.uneatlantico.es   
+## Escenario Máquina Virtual (Ubuntu)
 
-## Objetivos
+Se configuró una máquina virtual con Ubuntu instalada mediante VirtualBox, donde se instaló Java y Git para ejecutar el juego. En [`docs/vm-instrucciones.md`](./docs/vm-instrucciones.md) se detalla el proceso de configuración y uso.
 
-Realizar una comparativa entre una máquina virtual y Docker, sobre el tiempo, la ejecución, etc.
+---
 
-## Contenido del repositorio
+## Escenario Docker
 
-Este repositorio va a contener dos códigos, orientados a la misma finalidad pero realizados de forma distinta, y un README para incluir de forma escrita las diferencias de usar una VM y Docker.
+La aplicación Java se ejecuta dentro de un contenedor Docker basado en la imagen oficial `openjdk:21-slim`. El `Dockerfile` y el código `Fifa.java` están ubicados en la carpeta `/docker`. Instrucciones para construir y ejecutar el contenedor:
 
-## Tecnologías y herramientas utilizadas
-
-Lenguaje: Java Script
+```bash
+cd docker
+docker build -t fifa-java:1.0 .
+docker run --rm fifa-java:1.0
