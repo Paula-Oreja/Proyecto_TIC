@@ -1,12 +1,12 @@
-FifaSim/
-├── src/
-│   ├── Main.java
-│   ├── models/
-│   │   ├── Equipo.java
-│   │   ├── Jugador.java
-│   │   ├── Partido.java
-│   └── strategy/
-│       ├── EstrategiaJuego.java
-│       ├── AtaqueRapido.java
-│       └── DefensaFuerte.java
-├── Dockerfile
+Proyecto_TIC/
+│
+├── docker/
+│   ├── Dockerfile
+│   └── Fifa.java
+│
+├── docs/
+│   ├── resultados.md
+│   └── vm-instrucciones.md
+│
+├── README.md
+└── .gitignore  (opcional, recomendable para evitar subir archivos innecesarios)
