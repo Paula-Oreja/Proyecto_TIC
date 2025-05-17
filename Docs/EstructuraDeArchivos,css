@@ -5,8 +5,12 @@ Proyecto_TIC/
 │   └── Fifa.java
 │
 ├── docs/
+│   ├── 1.png
+│   ├── 2.png
+│   ├── 3.png
+│   ├── 4.png
+│   ├── EstructuraDeArchivos.css
 │   ├── resultados.md
 │   └── vm-instrucciones.md
 │
-├── README.md
-└── .gitignore  (opcional, recomendable para evitar subir archivos innecesarios)
+└── README.md
